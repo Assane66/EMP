@@ -88,7 +88,7 @@ export default function ContactPage() {
             <span>Contact</span>
           </nav>
           <h1>Contact & Localisation</h1>
-          <p>Écrivez-nous, appelez-nous ou venez nous rendre visite à Tivaouane Peulh.</p>
+          <p>Écrivez-nous, appelez-nous ou venez nous rendre visite à Apix, Tivaouane Peulh.</p>
         </div>
       </div>
 

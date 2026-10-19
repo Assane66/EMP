@@ -134,7 +134,7 @@ export default function HomePage() {
         </div>
         <div className={`${styles.heroContent} container`}>
           <div className={styles.heroBadge}>
-            <span>📍 Tivaouane Peulh, Sénégal</span>
+            <span>📍 Apix, Tivaouane Peulh, Sénégal</span>
           </div>
           <h1 className={styles.heroTitle}>
             Apprendre un métier.<br />

@@ -18,7 +18,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata = {
   title: {
-    default: 'EMP — École des Métiers Professionnels | Tivaouane Peulh',
+    default: 'EMP — École des Métiers Professionnels | Apix, Tivaouane Peulh, Sénégal',
     template: '%s | EMP — École des Métiers Professionnels',
   },
   icons: {
@@ -27,10 +27,11 @@ export const metadata = {
     apple: '/logo.png',
   },
   description:
-    "L'EMP vous accompagne dans l'acquisition de compétences concrètes en hôtellerie, informatique, transport, logistique et commerce international. Certifications CS, BT, BEP, BTS. Tivaouane Peulh, Sénégal.",
+    "L'EMP vous accompagne dans l'acquisition de compétences concrètes en hôtellerie, informatique, transport, logistique et commerce international. Certifications CS, BT, BEP, BTS. Apix, Tivaouane Peulh, Sénégal.",
   keywords: [
     'école formation professionnelle',
     'EMP Sénégal',
+    'Apix Tivaouane Peulh',
     'Tivaouane Peulh',
     'hôtellerie formation',
     'informatique formation Sénégal',
@@ -40,7 +41,7 @@ export const metadata = {
   ],
   openGraph: {
     title: 'EMP — École des Métiers Professionnels',
-    description: 'Apprendre un métier. Construire son avenir. Formations professionnelles à Tivaouane Peulh, Sénégal.',
+    description: 'Apprendre un métier. Construire son avenir. Formations professionnelles à Apix, Tivaouane Peulh, Sénégal.',
     type: 'website',
     locale: 'fr_SN',
   },
