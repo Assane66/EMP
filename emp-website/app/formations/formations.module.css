@@ -1,0 +1,208 @@
+.poleSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  margin-bottom: 96px;
+  padding-bottom: 96px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.poleSection:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.poleSection.reverse {
+  direction: rtl;
+}
+
+.poleSection.reverse > * {
+  direction: ltr;
+}
+
+.poleImage {
+  position: relative;
+  height: 520px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.poleImageOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.poleBadge {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.9rem;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+
+.poleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.poleHeader {}
+
+.poleSub {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--blue-primary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.poleTitle {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--gray-900);
+  margin-bottom: 16px;
+}
+
+.poleDesc {
+  color: var(--gray-600);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.formationsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-100);
+  transition: all 0.2s;
+}
+
+.formationItem:hover {
+  background: var(--blue-light);
+  border-color: var(--blue-light);
+}
+
+.formationDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+.formationName {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.formationDesc {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  line-height: 1.5;
+}
+
+.debouches {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.debouchesLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-500);
+}
+
+.debouchesTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.poleActions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* CTA Bar */
+.ctaBar {
+  background: linear-gradient(135deg, var(--blue-primary), var(--blue-deeper));
+  padding: 48px 0;
+}
+
+.ctaBarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.ctaBarTitle {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.ctaBarDesc {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+}
+
+.ctaBarBtns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .poleSection {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .poleSection.reverse {
+    direction: ltr;
+  }
+  .poleImage {
+    height: 320px;
+  }
+  .poleSection {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaBarInner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .ctaBarBtns {
+    justify-content: center;
+  }
+}

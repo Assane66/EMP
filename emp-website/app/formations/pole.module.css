@@ -1,0 +1,310 @@
+/* Shared CSS for all pole pages */
+
+/* =============================================
+   POLE HERO
+   ============================================= */
+
+.poleHero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.poleHeroMedia {
+  position: absolute;
+  inset: 0;
+}
+
+.poleHeroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 20, 60, 0.95) 0%,
+    rgba(10, 20, 60, 0.7) 50%,
+    rgba(10, 20, 60, 0.3) 100%
+  );
+}
+
+.poleHeroContent {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 64px;
+  padding-top: 140px;
+}
+
+.poleHeroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.poleHeroContent h1 {
+  color: white;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.poleHeroDesc {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.poleHeroText {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 620px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.poleHeroCtas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* =============================================
+   FORMATIONS GRID
+   ============================================= */
+
+.formationsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.formationCard {
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-100);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.25s;
+}
+
+.formationCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue-light);
+}
+
+.formationIcon {
+  font-size: 2.5rem;
+  width: 64px;
+  height: 64px;
+  background: var(--blue-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formationTitle {
+  font-size: 1.3rem;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.formationDesc {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Competences */
+.competences {
+  border-top: 1px solid var(--gray-100);
+  padding-top: 16px;
+}
+
+.competencesTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-400);
+  margin-bottom: 10px;
+}
+
+.competencesList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.competencesList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.checkIcon {
+  color: var(--green);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Debouches */
+.debouches {
+  border-top: 1px solid var(--gray-100);
+  padding-top: 16px;
+  margin-top: auto;
+}
+
+.debouchesTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gray-400);
+  margin-bottom: 10px;
+}
+
+.debouchesTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* =============================================
+   CERTS BAR
+   ============================================= */
+
+.certsBar {
+  background: var(--gray-50);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.certsBarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.certsBarTitle {
+  font-size: 1.1rem;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+.certsBarDesc {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+}
+
+.certsBarList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.certBadge {
+  padding: 8px 18px;
+  background: white;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  transition: all 0.2s;
+}
+
+.certBadge:hover {
+  border-color: var(--blue-primary);
+  background: var(--blue-light);
+}
+
+/* =============================================
+   POLE CTA
+   ============================================= */
+
+.poleCtaSection {
+  background: linear-gradient(135deg, var(--blue-deeper), var(--blue-dark));
+  padding: 80px 0;
+}
+
+.poleCtaInner {
+  text-align: center;
+}
+
+.poleCtaTitle {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: white;
+  margin-bottom: 16px;
+}
+
+.poleCtaDesc {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.05rem;
+  max-width: 540px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+.poleCtaBtns {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.poleCtaBtns .btn-outline {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.poleCtaBtns .btn-outline:hover {
+  background: white;
+  color: var(--blue-primary);
+  border-color: white;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media (max-width: 1024px) {
+  .formationsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .poleHeroCtas {
+    flex-direction: column;
+  }
+  .poleHeroCtas .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .certsBarInner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

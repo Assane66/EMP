@@ -1,0 +1,216 @@
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* Info cards */
+.infoCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.infoCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  background: white;
+  border: 1.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  transition: all 0.2s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.infoCard:hover {
+  border-color: var(--blue-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.infoCardWA:hover {
+  border-color: #25d366;
+}
+
+.infoIcon {
+  font-size: 1.4rem;
+  width: 44px;
+  height: 44px;
+  background: var(--blue-light);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoCardWA .infoIcon {
+  background: #d1fae5;
+}
+
+.infoTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray-400);
+  margin-bottom: 4px;
+}
+
+.infoVal {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.infoSub {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin: 2px 0 0;
+}
+
+.infoAction {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--blue-primary);
+  display: block;
+  margin-top: 6px;
+}
+
+.infoCardWA .infoAction {
+  color: #059669;
+}
+
+/* Map */
+.mapBox {
+  height: 320px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+  margin-bottom: 16px;
+}
+
+.addressBox {
+  padding: 16px 20px;
+  background: var(--gray-50);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-200);
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.addressBox strong {
+  display: block;
+  color: var(--gray-900);
+  margin-bottom: 4px;
+}
+
+/* Form */
+.formCard {
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 100px;
+}
+
+.formTitle {
+  font-size: 1.4rem;
+  color: var(--gray-900);
+  margin-bottom: 6px;
+}
+
+.formSubtitle {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  margin-bottom: 28px;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.submitBtn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.successMsg {
+  text-align: center;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.successIcon {
+  font-size: 2.8rem;
+}
+
+.successMsg h3 {
+  font-size: 1.3rem;
+  color: var(--gray-900);
+}
+
+.successMsg p {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .formCard {
+    position: static;
+  }
+}
+
+@media (max-width: 600px) {
+  .infoCards {
+    grid-template-columns: 1fr;
+  }
+  .row2 {
+    grid-template-columns: 1fr;
+  }
+  .formCard {
+    padding: 24px 16px;
+  }
+}
